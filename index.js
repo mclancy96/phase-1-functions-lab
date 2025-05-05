@@ -1,4 +1,10 @@
+const hqBlock = 42
+const blockDistanceInFeet = 264
+
 const distanceFromHqInBlocks = (blockNumber) => {
-    const hq = 42
-    return Math.abs(blockNumber - hq)
+    return Math.abs(blockNumber - hqBlock)
+}
+
+const distanceFromHqInFeet = (blockNumber) => {
+    return 264 * distanceFromHqInBlocks(blockNumber)
 }
