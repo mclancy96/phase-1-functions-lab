@@ -6,5 +6,9 @@ const distanceFromHqInBlocks = (blockNumber) => {
 }
 
 const distanceFromHqInFeet = (blockNumber) => {
-    return 264 * distanceFromHqInBlocks(blockNumber)
+    return blockDistanceInFeet * distanceFromHqInBlocks(blockNumber)
+}
+
+const distanceTravelledInFeet = (start, end) => {
+    return Math.abs(start - end) * blockDistanceInFeet
 }
