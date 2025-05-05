@@ -1,1 +1,4 @@
-// Code your solution in this file!
+const distanceFromHqInBlocks = (blockNumber) => {
+    const hq = 42
+    return Math.abs(blockNumber - hq)
+}
